@@ -1,8 +1,8 @@
-import light_spellbook
+from .light_spellbook import light_spell_allowed_ingredients
 
 def validate_ingredients(ingredients: str) -> str:
     allowed_ingredients: list[str] =\
-        light_spellbook.light_spell_allowed_ingredients()
+        light_spell_allowed_ingredients()
     low_ingredients: str = ingredients.lower()
 
     for allowed_ingredient in allowed_ingredients:
