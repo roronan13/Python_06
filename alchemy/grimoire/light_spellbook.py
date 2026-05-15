@@ -4,8 +4,6 @@ def light_spell_allowed_ingredients() -> list[str]:
     return (["earth", "air", "fire", "water"])
 
 def light_spell_record(spell_name: str, ingredients: str) -> str:
-    print("Testing record light spell : ", end="")
-
     ingredient_validation: str = grimoire.light_validator.validate_ingredients(ingredients)
 
     if "INVALID" in ingredient_validation:
