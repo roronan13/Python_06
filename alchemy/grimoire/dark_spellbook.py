@@ -1,4 +1,4 @@
-import alchemy.grimoire.dark_validator
+from .dark_validator import validate_ingredients
 
 
 def dark_spell_allowed_ingredients() -> list[str]:
@@ -6,9 +6,7 @@ def dark_spell_allowed_ingredients() -> list[str]:
 
 
 def dark_spell_record(spell_name: str, ingredients: str) -> str:
-    print("Testing record dark spell : ", end="")
-
-    ingredient_validation: str = alchemy.grimoire.dark_validator.validate_ingredients(ingredients)
+    ingredient_validation: str = validate_ingredients(ingredients)
 
     if "INVALID" in ingredient_validation:
         return (f"Spell rejected: {spell_name} ({ingredient_validation})")

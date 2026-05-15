@@ -1,8 +1,10 @@
-import alchemy.grimoire
+# import alchemy.grimoire.dark_spellbook
 
 
 if __name__ == "__main__":
     print(" === Kaboom 1 === ")
 
+    import alchemy.grimoire.dark_spellbook
+
     print(f"Testing record dark spell : \
-{alchemy.grimoire.dark_spell_record('Nope', 'Cactus, Onions and Bats')}")
+{alchemy.grimoire.dark_spellbook.dark_spell_record('Nope', 'Cactus, Onions and Bats')}")
