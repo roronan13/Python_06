@@ -6,5 +6,7 @@ if __name__ == "__main__":
 
     import alchemy.grimoire.dark_spellbook
 
-    print(f"Testing record dark spell : \
-{alchemy.grimoire.dark_spellbook.dark_spell_record('Nope', 'Cactus, Onions and Bats')}")
+    spell = alchemy.grimoire.dark_spellbook.dark_spell_record
+
+    print(f"Testing record dark spell \
+: {spell('Nope', 'Cactus, Onions and Bats')}")
